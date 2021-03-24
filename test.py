@@ -4,7 +4,7 @@ from examen import *
 class Pruebas(unittest.TestCase):
 
     def test_libros(self):
-        libros = [Libro("Pepe", "Pepe aventuras", 1920), Libro("Pepo", "Aventuras de pepo", 1922), Libro("Pepa", "Pepa's Adventure", 1922)]
+        libros = [Libro(Autor(1, "pepe", "pepon"), "Pepe aventuras", 1920), Libro(Autor(1, "pepe", "pepon"), "Aventuras de pepo", 1922), Libro(Autor(2, "pepa", "pepon"), "Pepa's Adventure", 1922)]
         self.assertEqual(mas_antiguos(libros, 1901), [])
         self.assertEqual(mas_antiguos(libros, 1920), ["Pepe aventuras"])
         self.assertEqual(mas_antiguos(libros, 1922), ["Aventuras de pepo","Pepa's Adventure"])

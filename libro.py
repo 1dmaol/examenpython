@@ -1,3 +1,5 @@
+from autor import *
+
 class Libro:
     def __init__(self, autor, titulo, anyo):
         self.__autor = autor
