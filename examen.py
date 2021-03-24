@@ -16,9 +16,6 @@ def get_list(fichero):
     f.close()
     return dic
 
-#res = get_list("palabras.txt")
-#pprint(res)
-
 def mas_antiguos(libros, anyo):
     titulos = []
     if (anyo > 1900 and anyo < 2021):
