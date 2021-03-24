@@ -8,12 +8,13 @@ def get_list(fichero):
     if linea == "":
         f.close()
         raise ValueError("El fichero esta vacio")
-    while linea != "" :
-        dic[cont] = []
-        if (cont == len(linea)-1):
-            dic[cont]
-        linea = f.readline()
-        cont=cont+1
+    for linea in f:
+        print("he leído: " + str(len(linea)-1))
+        array = []
+        if len(linea)-1:
+            
+        dic[len(linea)-1] = [linea]
+
     f.close()
     return dic
 
